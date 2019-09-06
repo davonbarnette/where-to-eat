@@ -1,0 +1,21 @@
+@import '../../../../global/scss/config';
+
+.login-form {
+  @include pad-box(24px);
+  @include border(solid);
+  @include box-shadow-4;
+
+  border-radius: 5px;
+  width:100%;
+
+  .login-button{
+    margin-left:auto;
+    line-height:initial;
+  }
+
+  .ant-form-item {
+    &:last-of-type{
+      margin-bottom:0;
+    }
+  }
+}

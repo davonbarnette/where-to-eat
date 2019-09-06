@@ -1,0 +1,25 @@
+@import '../../../../global/scss/config';
+
+
+.editor-container {
+  @include max-size;
+  margin-right: 24px;
+
+  .custom-json-editor {
+    display: flex;
+    height: 100%;
+    margin-bottom:12px;
+  }
+}
+
+.jsoneditor{
+
+  border-color: $primary-border-color !important;
+  overflow:hidden;
+  border-radius:5px;
+
+  &-poweredBy {
+    display:none;
+  }
+
+}

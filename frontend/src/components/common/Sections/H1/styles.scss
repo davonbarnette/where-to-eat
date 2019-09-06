@@ -1,0 +1,13 @@
+@import '../../../../global/scss/config';
+
+.h1-section {
+  .header {
+    @include font(32px, 700, 0, #505050);
+    line-height: 1em;
+    margin-bottom: 6px;
+  }
+  .subheader {
+    @include font(14px, 400, 0, #afafaf);
+    line-height: 1em;
+  }
+}

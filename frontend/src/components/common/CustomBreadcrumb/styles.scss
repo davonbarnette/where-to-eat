@@ -1,0 +1,30 @@
+@import "../../../global/scss/config";
+
+.custom-breadcrumb {
+  @include flex(row, flex-start, center);
+  & > span {
+    @include flex(row, flex-start, center);
+
+    .breadcrumb-link {
+      @include font(14px, 500, 0, $light-blue);
+      transition: all 0.2s;
+
+      &.first {
+        @include font(36px, 600, 0, $dark-gray);
+      }
+    }
+
+    .ant-breadcrumb-link{
+      & > a {
+
+      }
+
+
+
+    }
+
+    .ant-breadcrumb-separator {
+      display:flex;
+    }
+  }
+}

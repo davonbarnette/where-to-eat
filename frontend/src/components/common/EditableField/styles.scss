@@ -1,0 +1,88 @@
+@import '../../../global/scss/config';
+
+.editable-field-container{
+  position:relative;
+
+  .editable-field-description{
+    @include font(13px, 400, 0, $medium-gray);
+    font-style: italic;
+    margin-top:6px;
+  }
+
+  .editable-field-header{
+    width:100%;
+    margin-bottom:6px;
+
+    .action-item {
+      @include flex(row, flex-start, center);
+      margin-right: 9px;
+      &:last-of-type{
+        margin-right:0;
+      }
+
+      &:hover{
+        cursor:pointer;
+      }
+
+      .action-item-label {
+        @include font(12px, 500, 0, $h4-subtext);
+        margin-left:3px;
+        line-height:1em;
+      }
+    }
+
+
+    .editable-field-label{
+      @include font(14px, 700, 0.025em, $h4-header);
+      margin-right:6px;
+      line-height:1em;
+    }
+  }
+
+  .select {
+    margin-top: 6px;
+    width:100%;
+  }
+
+  .static-field-value {
+    @include font(16px, 500, 0, $h4-subtext);
+    @include pad-box(6px 11px);
+    @include border(solid);
+    background:white;
+    width:100%;
+    transition: all 0.2s;
+    transition-delay: 0s;
+    z-index: 100;
+    margin-top: 6px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &.empty {
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    &:hover{
+
+      @include box-shadow-1;
+      transition-delay: 0.2s;
+
+    }
+  }
+
+  .editable-field-error{
+    @include font(12px, 500, 0, $error-color);
+    transform:translate(0, -50px);
+    margin-top:3px;
+    transition:all 0.2s ease-in;
+  }
+
+}
+
+.editable-field-icon {
+
+  &:hover{
+    cursor:pointer;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "votes",
+  "info": {
+    "name": "vote",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "suggestion": {
+      "model": "suggestion"
+    }
+  }
+}

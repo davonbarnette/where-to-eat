@@ -1,0 +1,28 @@
+@import '../../../global/scss/config';
+
+.socket-debugger{
+
+  @include pad-box(24px);
+  @include max-size;
+  background: $secondary-background-color;
+
+  .actionable {
+    @include max-size;
+    margin-right:12px;
+
+    .select-action{
+      width:100%;
+      margin-bottom:12px;
+    }
+  }
+
+  .payload {
+    @include pad-box(12px);
+    @include border(solid);
+    @include max-size;
+    background: white;
+    border-radius: 5px;
+    overflow-y: scroll;
+  }
+
+}

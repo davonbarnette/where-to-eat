@@ -1,0 +1,16 @@
+@import '../../../../global/scss/config';
+
+.vote-card{
+  @include box-shadow-3;
+  @include pad-box(24px);
+  border-radius: 3px;
+  overflow: hidden;
+  background:white;
+  transition: all 0.2s;
+  width:100%;
+
+  &:hover{
+    cursor: pointer;
+    transform: translate(0, -3px);
+  }
+}

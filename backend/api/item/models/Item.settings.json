@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "items",
+  "info": {
+    "name": "item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "model": "order",
+      "via": "items"
+    }
+  }
+}

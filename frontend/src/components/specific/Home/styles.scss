@@ -1,0 +1,21 @@
+@import '../../../global/scss/config';
+
+.home-page {
+  @include flex(column, flex-start, flex-start);
+  @include pad-box(48px);
+  width: 100%;
+
+  .content {
+    @include flex(column, flex-start, flex-start);
+
+    @include scale-max-content-width;
+    position: relative;
+
+    .ant-row {
+      margin-bottom:16px;
+      &:last-of-type{
+        margin-bottom:0;
+      }
+    }
+  }
+}

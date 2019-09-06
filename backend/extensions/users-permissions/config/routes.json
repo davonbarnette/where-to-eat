@@ -1,0 +1,11 @@
+{
+  "routes": [{
+    "method": "GET",
+    "path": "/me",
+    "handler": "Auth.me",
+    "config": {
+      "policies": [],
+      "prefix": false
+    }
+  }]
+}

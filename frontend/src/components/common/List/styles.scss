@@ -1,0 +1,5 @@
+@import "../../../global/scss/config";
+
+.list-component {
+    @include font(14px, 400, 0, $dark-gray);
+}

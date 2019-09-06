@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "suggestions",
+  "info": {
+    "name": "suggestion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sessions": {
+      "collection": "session",
+      "via": "suggestions",
+      "dominant": true
+    },
+    "user": {
+      "model": "user",
+      "via": "suggestions",
+      "plugin": "users-permissions"
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}

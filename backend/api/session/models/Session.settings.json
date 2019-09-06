@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "sessions",
+  "info": {
+    "name": "session",
+    "description": ""
+  },
+  "options": {
+    "idAttributeType": "string",
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "stage": {
+      "enum": [
+        "inactive",
+        "choosing",
+        "submitting_orders",
+        "completed"
+      ],
+      "type": "enumeration",
+      "default": "inactive"
+    },
+    "name": {
+      "type": "string"
+    },
+    "space": {
+      "model": "space",
+      "via": "sessions"
+    },
+    "suggestions": {
+      "collection": "suggestion",
+      "via": "sessions"
+    }
+  }
+}

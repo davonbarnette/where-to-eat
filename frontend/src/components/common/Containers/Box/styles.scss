@@ -1,0 +1,17 @@
+@import '../../../../global/scss/config';
+
+.box-container {
+  @include pad-box(24px);
+  @include border(solid);
+  width:100%;
+  border-radius:5px;
+
+  &.raised {
+    @include box-shadow-3;
+  }
+
+  &.red {
+    background: #ffecec;
+    border-color: #ffa2a2;
+  }
+}

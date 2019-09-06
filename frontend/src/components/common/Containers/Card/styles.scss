@@ -1,0 +1,66 @@
+@import '../../../../global/scss/config';
+
+.card {
+  @include flex(column, flex-start, flex-start);
+  @include border(solid);
+  @include max-size;
+  overflow:hidden;
+  border-radius: 5px;
+  background: white;
+
+  .header {
+    @include flex(row, space-between, center);
+    @include pad-box(16px 24px);
+    width: 100%;
+
+    .text {
+      @include flex(row, flex-start, center);
+      @include font(18px, 600, 0, $dark-gray);
+
+      & > svg {
+        margin-right: 9px;
+      }
+    }
+    .action {
+      margin-left:auto;
+    }
+
+  }
+
+
+  .footer {
+    @include flex(row, flex-end, center);
+    @include border(solid none none none);
+    @include pad-box(12px);
+    width: 100%;
+    margin-top: auto;
+
+    .action {
+      @include font(12px, 500, 0, $light-blue);
+      margin-left: auto;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    @include flex(column, flex-start, center);
+    @include max-size;
+
+
+    .center {
+      @include font(48px, 600, 0, $light-blue);
+      line-height: 1em;
+
+    }
+
+    .sub {
+      @include font(13px, 500, 0, $light-gray);
+      margin-top: 6px;
+      font-style: italic;
+    }
+  }
+}

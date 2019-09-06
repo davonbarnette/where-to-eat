@@ -1,0 +1,18 @@
+@import '../../../../global/scss/config';
+
+.h2-section {
+  .header {
+    @include flex(row, flex-start, center);
+    @include font(20px, 600, 0, $dark-gray);
+    line-height: 1em;
+    margin-bottom: 6px;
+
+    & > svg {
+      margin-right:6px;
+    }
+  }
+  .subheader {
+    @include font(14px, 400, 0, #afafaf);
+    line-height: 1em;
+  }
+}

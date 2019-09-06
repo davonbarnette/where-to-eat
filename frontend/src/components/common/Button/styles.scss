@@ -1,0 +1,41 @@
+@import '../../../global/scss/config';
+
+.button {
+  @include pad-box(6px 12px);
+  @include font(14px, 600, 0em, white);
+  min-width:150px;
+  text-align: center;
+  background-color: $primary-button-bg-color;
+  border-radius: 3px;
+  transition: all 0.2s;
+
+  &.enabled {
+    &.blue {
+      &:hover {
+        background-color: #475e98;
+      }
+    }
+
+    &.orange {
+      background-color: $error-color;
+      &:hover {
+        background-color: #d25623;
+      }
+    }
+    &.clear {
+      background-color: transparent;
+      color:$medium-gray;
+      &:hover {
+        background-color: $secondary-background-color;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: gray !important;
+  }
+}

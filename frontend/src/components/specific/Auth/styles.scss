@@ -1,0 +1,33 @@
+@import '../../../global/scss/config';
+
+.auth-page {
+  @include flex-center(column);
+  @include max-size;
+  @include pad-box(24px);
+
+
+  .content {
+    @include flex-center(column);
+    width: 100%;
+    max-width: 500px;
+
+    .header {
+      @include flex(column, flex-start, center);
+      text-align: center;
+      margin-bottom: 24px;
+
+      .title {
+        @include font(24px, 600, 0, $dark-gray);
+      }
+
+      .subtitle {
+        @include font(14px, 400, 0, $medium-gray);
+      }
+    }
+
+    .footer {
+      margin-top: 12px;
+    }
+  }
+
+}

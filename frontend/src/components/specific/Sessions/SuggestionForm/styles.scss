@@ -1,0 +1,37 @@
+@import '../../../../global/scss/config';
+
+.suggestion-form-wrapper {
+  width:100%;
+
+  .header-2 {
+    @include border(none none solid none);
+    @include pad-box(0 0 6px 0);
+    width: 100%;
+    margin: 60px 0 24px 0;
+    &:first-of-type {
+      margin-top:0;
+    }
+  }
+
+  .suggestion-form {
+    @include pad-box(24px);
+  }
+
+  & .submit {
+    &.stickied {
+      padding: 12px 24px;
+      @include border(solid none none none);
+      z-index: 1000;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: white;
+    }
+
+    & .button{
+      width:fit-content;
+      margin-left:auto;
+    }
+  }
+}

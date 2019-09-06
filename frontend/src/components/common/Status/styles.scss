@@ -1,0 +1,21 @@
+@import '../../../global/scss/config';
+
+.status {
+  @include flex(row, flex-start, center);
+
+  .circle {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+
+    background: #a7a7a7;
+
+    &.online {
+      background: #63af63;
+    }
+  }
+
+  .text  {
+    margin-left:12px;
+  }
+}
