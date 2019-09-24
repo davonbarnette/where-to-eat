@@ -63,6 +63,10 @@
     "suggestions": {
       "collection": "suggestion",
       "via": "user"
+    },
+    "sessions": {
+      "collection": "session",
+      "via": "user"
     }
   }
 }

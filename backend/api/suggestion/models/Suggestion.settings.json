@@ -17,11 +17,6 @@
     "name": {
       "type": "string"
     },
-    "sessions": {
-      "collection": "session",
-      "via": "suggestions",
-      "dominant": true
-    },
     "user": {
       "model": "user",
       "via": "suggestions",
@@ -29,6 +24,11 @@
     },
     "location": {
       "type": "string"
+    },
+    "sessions": {
+      "collection": "session",
+      "dominant": true,
+      "via": "suggestions"
     }
   }
 }

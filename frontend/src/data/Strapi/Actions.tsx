@@ -73,16 +73,17 @@ export default class StrapiActions {
 
     static sessions = {
         create: async (data: StrapiSessionArgs) => {
-            let appended = {...data, user: AppStore.user};
+            console.log('data', data);
+            let appended = {...data, host: AppStore.user};
             let suggestion = await StrapiAPI.handleRequest<StrapiSuggestionArgs, StrapiSuggestionObject>({
-                method: 'post', url: suggestionsRoute, data: appended,
+                method: 'post', url: sessionsRoute, data: appended,
             });
             if (suggestion instanceof Error) return null;
             else AppStore.suggestions.set(suggestion.id, suggestion);
         },
         find: async (spaceId?:number) => {
             let sessions = await StrapiAPI.handleRequest<any, StrapiSessionObject[]>({
-                method: 'get', url: suggestionsRoute
+                method: 'get', url: sessionsRoute
             });
             if (sessions instanceof Error) return null;
             else {

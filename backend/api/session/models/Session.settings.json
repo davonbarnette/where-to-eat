@@ -34,6 +34,15 @@
     "suggestions": {
       "collection": "suggestion",
       "via": "sessions"
+    },
+    "host": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "user": {
+      "model": "user",
+      "via": "sessions",
+      "plugin": "users-permissions"
     }
   }
 }
