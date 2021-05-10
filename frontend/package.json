@@ -23,7 +23,7 @@
     "debounce": "^1.2.0",
     "history": "^4.7.2",
     "jsoneditor": "^5.26.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mobx": "^5.7.0",
     "mobx-react": "^5.4.2",
     "moment": "^2.23.0",
