@@ -22,7 +22,7 @@
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
     "history": "^4.7.2",
-    "jsoneditor": "^5.26.3",
+    "jsoneditor": "^9.5.6",
     "lodash": "^4.17.15",
     "mobx": "^5.7.0",
     "mobx-react": "^5.4.2",
